@@ -1,0 +1,38 @@
+﻿@model ZeroDowntime.Models.Item
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Request is served by @ViewBag.WebAppVersion</h2>
+
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.RequestTime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Version)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Summary)
+        </th>
+        <th></th>
+    </tr>
+
+
+    <tr>
+        <td>
+            @Html.DisplayFor(model => model.RequestTime)
+        </td>
+        <td>
+            @Html.DisplayFor(model => model.Version)
+        </td>
+        <td>
+            @Html.DisplayFor(model => model.Summary)
+        </td>
+    </tr>
+
+
+</table>
